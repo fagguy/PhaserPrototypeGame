@@ -30,7 +30,7 @@
 
         // define animations
         this.animations.add("anim", ["dron1", "dron2"], this.game.rnd.between(2, 5), true);
-        this.animations.add("explosion", Phaser.Animation.generateFrameNames("explosion", 1, 6, "", 3));
+        this.animations.add("explosion", Phaser.Animation.generateFrameNames("Explosion", 1, 6, "", 3));
 
         // play first animation as default
         this.play("anim");
@@ -45,6 +45,9 @@
     }
 }
 
+// -------------------------------------------------------------------------
+// -------------------------------------------------------------------------
+// -------------------------------------------------------------------------
 function wiggle(aProgress: number, aPeriod1: number, aPeriod2: number): number {
     var current1: number = aProgress * Math.PI * 2 * aPeriod1;
     var current2: number = aProgress * Math.PI * 2 * aPeriod2;
