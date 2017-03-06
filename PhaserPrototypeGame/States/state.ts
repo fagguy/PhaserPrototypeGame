@@ -12,7 +12,14 @@
         // background
         this.add.image(0, 0, "BG");
         // dron sprite
-        var dron: Phaser.Sprite = this.add.sprite(320, 100, "Atlas", "dron1", this.world);
-        dron.anchor.setTo(0.5, 0.5);
+        var dron: Dron = new Dron(this.game, 320, 100, "Atlas", "dron1");
+        // physics
+        this.game.physics.startSystem(Phaser.Physics.P2JS);
+        this.game.physics.p2.enable(dron);
+        dron.body.kinematic = true;
+        // setup dron
+        dron.setUp();
+        // add dron to world group
+        this.world.add(dron);
     }
 }

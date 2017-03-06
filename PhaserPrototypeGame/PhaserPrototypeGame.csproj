@@ -27,6 +27,7 @@
     <Content Include="Graphics\bg.jpg" />
     <Content Include="Graphics\phaser2.png" />
     <Content Include="index.html" />
+    <Content Include="Scripts\phaser.js" />
     <Content Include="Scripts\phaser.min.js" />
     <Content Include="Scripts\umd.min.js" />
     <Content Include="web.config" />
@@ -34,6 +35,7 @@
   <ItemGroup>
     <TypeScriptCompile Include="app.ts" />
     <TypeScriptCompile Include="game.ts" />
+    <TypeScriptCompile Include="GameObjects\dron.ts" />
     <TypeScriptCompile Include="Scripts\collections.d.ts" />
     <TypeScriptCompile Include="Scripts\p2.d.ts" />
     <TypeScriptCompile Include="Scripts\phaser.comments.d.ts" />
