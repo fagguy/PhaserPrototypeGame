@@ -10,6 +10,11 @@
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
+# Ignores compiled TypeScript files
+**/*.map
+**/*.js
+!**/Scripts/*.js
+
 # Build results
 [Dd]ebug/
 [Dd]ebugPublic/
