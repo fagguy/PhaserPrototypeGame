@@ -1,18 +1,7 @@
-﻿class SimpleGame {
-
+﻿class SimpleGame extends Phaser.Game {
+    // -------------------------------------------------------------------------
     constructor() {
-        this.game = new Phaser.Game(800, 600, Phaser.AUTO, 'content', { preload: this.preload, create: this.create });
+        // init game
+        super(640, 400, Phaser.AUTO, "content", State);
     }
-
-    game: Phaser.Game;
-
-    preload() {
-        this.game.load.image('logo', 'Graphics/phaser2.png');
-    }
-
-    create() {
-        var logo = this.game.add.sprite(this.game.world.centerX, this.game.world.centerY, 'logo');
-        logo.anchor.setTo(0.5, 0.5);
-    }
-
 }

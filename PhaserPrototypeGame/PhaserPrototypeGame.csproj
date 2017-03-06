@@ -23,6 +23,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app.css" />
+    <Content Include="Graphics\atlas.png" />
+    <Content Include="Graphics\bg.jpg" />
     <Content Include="Graphics\phaser2.png" />
     <Content Include="index.html" />
     <Content Include="Scripts\phaser.min.js" />
@@ -36,8 +38,10 @@
     <TypeScriptCompile Include="Scripts\p2.d.ts" />
     <TypeScriptCompile Include="Scripts\phaser.comments.d.ts" />
     <TypeScriptCompile Include="Scripts\pixi.comments.d.ts" />
+    <TypeScriptCompile Include="States\state.ts" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Graphics\atlas.json" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
