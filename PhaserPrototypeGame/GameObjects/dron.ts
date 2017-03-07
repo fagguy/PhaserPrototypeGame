@@ -40,6 +40,8 @@
     public explode() {
         // remove movement tweens
         this.game.tweens.removeFrom(this.body);
+        // disable collisions
+        this.body.destroy();
         // explode dron and kill it on complete
         this.play("explosion", 8, false, true);
     }
