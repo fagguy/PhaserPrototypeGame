@@ -108,7 +108,10 @@
             this._cannon.rotation -= this.time.elapsedMS * State.CANNON_SPEED / 1000 * (Math.PI / 4);
         } else if (keyboard.isDown(Phaser.Keyboard.RIGHT)) {
             this._cannon.rotation += this.time.elapsedMS * State.CANNON_SPEED / 1000 * (Math.PI / 4);
-        } else if (this._space.justDown) {  // fire missile
+        }
+
+        // spacebar
+        if (this._space.justDown) {  // fire missile
             // get firtst missile from pool
             var missile: Phaser.Sprite = this._missiles.getFirstExists(false);
 
