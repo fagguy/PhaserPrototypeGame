@@ -43,7 +43,11 @@
         // disable collisions
         this.body.destroy();
         // explode dron and kill it on complete
-        this.play("explosion", 8, false, true);
+        this.play("explosion", 8, false, false);
+        // destroy the dron object instance
+        this.animations.currentAnim.onComplete.add(function () {
+            this.destroy();
+        }, this);
     }
 }
 
